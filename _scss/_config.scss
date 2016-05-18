@@ -1,0 +1,54 @@
+// Media Queries
+$no-mq-support: false !default;
+$no-mq-threshold: 1200px;
+@mixin mq($width: 0, $height: false) {
+    @if $no-mq-support{
+        @if $width < $no-mq-threshold{
+            @content;
+        }
+    } @else {
+        @if $height {
+            @media ( min-width: + $width ) and ( min-height: + $height ) {
+                @content;
+            }
+        }@else{
+            @media ( min-width: + $width ) {
+                @content;
+            }
+        }
+    }
+}
+
+// Color
+
+$dark-blue: #005db9;
+$light-blue: #00a1e0;
+$ct-gray: #54565b;
+$dark-gray: #27292F;
+
+
+// Type
+
+$depot: 'depot-new-web';
+$trump: 'trumpsoftpro';
+
+@mixin trump-bold($size) {
+  font-family: $trump;
+  font-weight: 700;
+  font-style: normal;
+  font-size: $size;
+}
+
+@mixin depot-thin($size) {
+  font-family: $depot;
+  font-weight: 200;
+  font-style: normal;
+  font-size: $size;
+}
+
+@mixin depot-med($size) {
+  font-family: $depot;
+  font-weight: 500;
+  font-style: normal;
+  font-size: $size;
+}

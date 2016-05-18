@@ -1,0 +1,82 @@
+body {
+	background-color: $dark-gray;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited {
+		color: $light-blue;
+	}
+
+	&:hover {
+		color: $dark-blue;
+	}
+}
+
+// Type
+
+h1 {
+	@include trump-bold(6.25rem);
+
+	color: white;
+	letter-spacing: 3px;
+	line-height: 5.25rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	@include depot-thin(1.5rem);
+
+	color: white;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: .5rem 0 0 0;
+}
+
+h3 {
+	@include depot-med(.9rem);
+
+	color: white;
+	letter-spacing: 4px;
+	padding: .5rem 0;
+	text-transform: uppercase;
+}
+
+p {
+	@include depot-thin(.9rem);
+
+	color: white;
+	letter-spacing: 2px;
+	padding-top: 2rem;
+}
+
+li {
+	border-bottom: 1px solid $light-blue;
+	list-style-type: none;
+	padding: 1.75rem 0;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 2.5rem;
+
+	@include mq(800px){
+		width: 50%;
+	}
+}
+
+table {
+	@include depot-thin(1rem);
+
+	border-top: 1px solid $light-blue;
+	border-bottom: 1px solid $light-blue;
+	color: white;
+	letter-spacing: 2px;
+	margin-top: 1rem;
+	padding: .5rem 0;
+	text-align: center;
+	width: 100%;
+}

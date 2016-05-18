@@ -1,0 +1,22 @@
+---
+layout: default
+title: CX Brews
+---
+
+<div>
+  <ul>
+  {% assign beer_list = site.beer | sort:"brewery" %}
+    {% for beer in beer_list %}
+    	{% if beer.status contains "on-tap" %}
+    	<a href="{{ beer.url }}">
+			<li>
+				<div>
+					<h1>{{ beer.title }}</h1>
+					<h2>{{ beer.brewery }}</h2>
+				</div>
+			</li>
+		</a>
+    	{% endif %}
+    {% endfor %}
+  </ul>
+</div>

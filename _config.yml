@@ -1,0 +1,8 @@
+name: CX Brews
+markdown: kramdown
+highlighter: rouge
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+collections:
+  beer:
+    output: true
+    permalink: /beer/:path/
