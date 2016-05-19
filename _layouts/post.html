@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h2>{{ page.brewery }}</h2>
-<h3>{{ page.type }}</h3>
-<table>
-	<tr>
-		<td><strong>{{ page.abv }}</strong> ABV</td>
-		<td><strong>{{ page.ibu }}</strong> IBU
-		</td>
-	</tr>
-</table>
-<p>Tapped on: {{ page.date | date_to_string }}</p>
+
+<div class="container beer">
+	<h1><span>{{ page.title }}</span></h1>
+	<table>
+		<tr>
+			<td class="brewery" colspan="3">{{ page.brewery }}</td>
+		</tr>
+		<tr>
+			<td class="type">{{ page.type }}</td>
+			<td><strong>{{ page.abv }}</strong><br/>ABV</td>
+			<td><strong>{{ page.ibu }}</strong><br/>IBU</td>
+		</tr>
+	</table>
+	<p>Tapped on: {{ page.date | date_to_string }}</p>
+</div>

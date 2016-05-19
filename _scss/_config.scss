@@ -32,6 +32,13 @@ $dark-gray: #27292F;
 $depot: 'depot-new-web';
 $trump: 'trumpsoftpro';
 
+@mixin trump-reg($size) {
+  font-family: $trump;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $size;
+}
+
 @mixin trump-bold($size) {
   font-family: $trump;
   font-weight: 700;

@@ -1,7 +1,7 @@
 ---
 layout: post
 status: on-tap
-brewery: "Hardywood"
+brewery: "Hardywood Park Craft Brewery"
 title:  "Great Return IPA"
 type: India Pale Ale
 abv: 7.5%

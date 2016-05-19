@@ -1,0 +1,77 @@
+.beer {
+
+	padding-top: 1rem;
+
+	h1 {
+		color: $ct-gray;
+		font-size: 7.5rem;
+		line-height: 6.35rem;
+		margin: 0;
+		text-decoration: underline;
+		word-break: break-word;
+	}
+
+	span {
+		color: white;
+	}
+
+	h3 {
+		@include depot-med(.9rem);
+
+		color: white;
+		letter-spacing: 4px;
+		padding: .5rem 0;
+		text-transform: uppercase;
+	}
+
+	p {
+		@include depot-thin(.9rem);
+
+		color: white;
+		letter-spacing: 2px;
+	}
+
+	table {
+		@include depot-thin(1rem);
+
+		border-collapse: collapse;
+		color: white;
+		letter-spacing: 2px;
+		margin: 2.5rem 0;
+		text-align: center;
+		width: 100%;
+
+		tr {
+			border-bottom: 1px solid $light-blue;
+			border-top: 1px solid $light-blue;
+			width: 100%;
+		}
+
+		td {
+			line-height: .95rem;
+		}
+
+		.type {
+			@include depot-med(.9rem);
+
+			border-right: 1px solid $light-blue;
+			font-size: 1rem;
+			letter-spacing: 4px;
+			line-height: .95rem;
+			padding: 1rem;
+			text-align: left;
+			text-transform: uppercase;
+			width: 50%;
+		}
+
+		.brewery {
+			@include trump-reg(2rem);
+
+			letter-spacing: 3px;
+			line-height: 1.75rem;
+			padding: 1rem;
+			text-transform: uppercase;
+			text-align: left;
+		}
+	}
+}
